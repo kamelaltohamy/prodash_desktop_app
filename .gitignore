@@ -1,0 +1,46 @@
+# ==============================================================================
+# Pro Dash Desktop Application — Git Ignore Rules (.gitignore)
+# ==============================================================================
+
+# 1. Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# 3. PyInstaller Standalone Executable Builds (Keep dist & build off git)
+build/
+dist/
+*.spec.bak
+*.exe
+
+# 4. Exclude Backend entirely (Managed separately on server)
+backend/
+manage.py
+index.html
+
+# 5. Local User Database & Preferences (Protect privacy)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal
+data/preferences.ini
+
+# 6. Environment variables & Secrets
+.env
+.env.*
+
+# 7. Testing & Benchmarking caches
+.pytest_cache/
+.benchmarks/
+
+# 8. OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
